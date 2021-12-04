@@ -1,0 +1,59 @@
+Relational database table for orders
+
+Order ID 	Product ID	Product Name 	Customer ID	First name	Last name	Quantity 	Unit cost 	Total 	Date of order
+456	23344	Eye Shadow	101	Isla 	Brown 	20	$40.00	$800	22 -04 -21
+243	24555	Eyeshadow 	112	Maria	Wilson	40	$20.00	$800	24 -09 -21
+676	21345	Face cream	111	Jasmine 	Sindhu	10	$100.00	$1000	10 -09-21
+878	64677	Skin care cream	221	Maria	Jones	100	$60.00	$6000	30- -09 -21
+
+Normalization of the order relational database table
+1NF
+Quantity ordered 
+Order ID 	Product ID	Quantity 	Unit cost 	Total 
+456	23344	20	$40.00	$800
+243	24555	40	$20.00	$800
+676	21345	10	$100.00	$1000
+878	64677	100	$60.00	$6000
+
+
+Name of the product 
+Product id	Product name
+23344	Eye Shadow
+24555	Eyeshadow
+21345	Face cream
+64677	Skin care cream
+
+
+Date of order for the product
+Customer id	First name	Last name	Date of order
+101	Isla	Brown	22 -04 -21
+112	Maria	Wilson	24 -09 -21
+111	Jasmine	Sindhu	10 -09-21
+221	Maria	Jones	30- -09 -21
+
+
+
+2NF
+Name of the product 
+Product id	Product name
+23344	Eye Shadow
+24555	Eyeshadow
+21345	Face cream
+64677	Skin care cream
+ 
+
+ Product Ordered date 
+Customer id	Product name 	Date of order
+101	Eye Shadow	22 -04 -21
+112	Eyeshadow	24 -09 -21
+111	Face cream	10 -09-21
+221	Skin care cream	30- -09 -21
+
+3NF 
+Order date
+Product name	Date of order
+Eye Shadow	22 -04 -21
+Eyeshadow	24 -09 -21
+Face cream	10 -09-21
+Skin care cream	30- -09 -21
+
